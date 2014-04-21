@@ -16,7 +16,7 @@ $outputfolder = "CSV"
 
 $vmhosts = Get-VMHost | Sort Name | Where-Object {$_.State -eq "Connected"}
 foreach ($vmhost in $vmhosts){
-	$esxcli = Get-ESXCLI -VMHost ld001esxprd07.ld.corp.local
+	$esxcli = Get-ESXCLI -VMHost $vmhost
 	$esxcli.software.vib.list() | export-csv "$outputfolder\$vmhost.name.csv"
 }
 Disconnect-VIServer -confirm:$false
