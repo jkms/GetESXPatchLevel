@@ -2,6 +2,7 @@
 # NAME: GetESXPatchLevel.ps1
 # AUTHOR: John Stafford
 # DATE:04/21/2014
+# Version: v0.1
 #
 # COMMENTS: This script will prompt a user for a VCenter Server
 # and then query all of the hosts for their patch level, and dump
