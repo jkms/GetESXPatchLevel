@@ -1,0 +1,2 @@
+This script will prompt a user for a VCenter Server and then query all of the hosts for their patch level, and dump it in a CSV file. Simple.
+
